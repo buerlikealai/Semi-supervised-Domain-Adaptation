@@ -8,7 +8,9 @@ def sort_probs_clc(prob,label_map,least_confident_per):
     
     label_map is the output of argmax function,
     
-    least_confident_per is a pre-defined threshold which decides the reliability of predcited label.
+    least_confident_per is a pre-defined threshold which decides the reliability of predcited label, 
+    
+    all input are array, computation is carried out in CPU.
     
     Usage: by thresholding the predicted probability of each predicted label, only selecting top confident predictions for 
     retraining in Semi-supervised domain adaptation. 
